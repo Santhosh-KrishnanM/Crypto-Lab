@@ -5,8 +5,6 @@ function modInverse(a, m) {
     return null;
 }
 
-/* ================= AFFINE CIPHER ================= */
-
 function affineEncrypt(text, a, b) {
     return text.toUpperCase().replace(/[A-Z]/g, char => {
         let x = char.charCodeAt(0) - 65;
@@ -26,7 +24,6 @@ function affineDecrypt(text, a, b) {
     });
 }
 
-/* ================= VIGENERE CIPHER ================= */
 
 function vigenereEncrypt(text, key) {
     key = key.toUpperCase();
@@ -48,7 +45,6 @@ function vigenereDecrypt(text, key) {
     });
 }
 
-/* ================= MAIN ================= */
 
 function encrypt() {
     let text = document.getElementById("text").value;
