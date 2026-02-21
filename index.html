@@ -2,17 +2,94 @@
 <html>
 <head>
   <title>Crypto Lab</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="bootstrap.css" rel="stylesheet">
-</head>
-<body>
-  <h2>Cryptographic Algorithms and Network Security</h2>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <button onclick="location.href='EX1/affine.html'">Affine Cipher</button>
-  <button onclick="location.href='EX1/vigenere.html'">Vigenère Cipher</button>
-  <button onclick="location.href='EX2/playfair.html'">Playfair Cipher</button>
-  <button onclick="location.href='EX3/miller_rabin.html'">Miller Rabin</button>
-  <button onclick="location.href='EX3/gcd.html'">GCD</button>
-  <button onclick="location.href='EX3/extended_euclid.html'">Extended Euclidean Algorithm</button>
+  <!-- Bootstrap -->
+  <link href="bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+  <!-- Header -->
+  <div class="container text-center mt-4">
+    <h2 class="mb-3">🔐 Cryptographic Algorithms and Network Security</h2>
+    <p class="text-muted">Crypto Lab Implementations</p>
+  </div>
+
+  <!-- Buttons Section -->
+  <div class="container mt-4">
+    <div class="row g-3">
+
+      <!-- EX1 -->
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-primary"
+          onclick="location.href='EX1/affine.html'">
+          Affine Cipher
+        </button>
+      </div>
+
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-primary"
+          onclick="location.href='EX1/vigenere.html'">
+          Vigenère Cipher
+        </button>
+      </div>
+
+      <!-- EX2 -->
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-success"
+          onclick="location.href='EX2/playfair.html'">
+          Playfair Cipher
+        </button>
+      </div>
+
+      <!-- EX3 -->
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-warning"
+          onclick="location.href='EX3/miller_rabin.html'">
+          Miller Rabin
+        </button>
+      </div>
+
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-warning"
+          onclick="location.href='EX3/gcd.html'">
+          GCD
+        </button>
+      </div>
+
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-warning"
+          onclick="location.href='EX3/extended_euclid.html'">
+          Extended Euclidean Algorithm
+        </button>
+      </div>
+
+      <!-- NEW ADDITIONS -->
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-danger"
+          onclick="location.href='fermat/fermat.html'">
+          Fermat's Little Theorem
+        </button>
+      </div>
+
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-dark"
+          onclick="location.href='simpledes/simpledes.html'">
+          Simple DES
+        </button>
+      </div>
+
+      <div class="col-md-4 d-grid">
+        <button class="btn btn-secondary"
+          onclick="location.href='aes/aes.html'">
+          AES Encryption
+        </button>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>
